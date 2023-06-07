@@ -1,0 +1,27 @@
+includes:
+- configs/jarvis/qmof/bandgap/random/base.yml
+
+model:
+ name: egnn
+ hidden_nf: 128
+ n_layers: 4
+ coords_weight: 1.0
+ node_attr: 1
+ embeddings: qmof
+ regress_forces: False
+ use_pbc: True
+
+optim:
+ batch_size: 8
+ eval_batch_size: 8
+ num_workers: 4
+ weight_decay: 0.00000000001
+ lr_initial: 0.0001
+ optimizer: Adam
+ lr_gamma: 0.1
+ lr_milestones:
+  - 5000000000
+ warmup_steps: -1
+ warmup_factor: 1.0
+ max_epochs: 10
+ eval_every: 500

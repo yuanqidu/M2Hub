@@ -1,0 +1,50 @@
+includes:
+- configs/jarvis/qmof/bandgap/random/base.yml
+
+model:
+ name: gemnet_t
+ num_spherical: 7
+ num_radial: 6
+ num_blocks: 3
+ emb_size_atom: 128
+ emb_size_edge: 128
+ emb_size_trip: 64
+ emb_size_rbf: 16
+ emb_size_cbf: 16
+ emb_size_bil_trip: 64
+ num_before_skip: 1
+ num_after_skip: 2
+ num_concat: 1
+ num_atom: 2
+ cutoff: 6.0
+ max_neighbors: 50
+ rbf:
+  name: gaussian
+ envelope:
+  name: polynomial
+  exponent: 5
+ cbf: 
+  name: spherical_harmonics
+ extensive: False
+ otf_graph: False
+ use_pbc: True
+ output_init: HeOrthogonal
+ activation: silu
+ regress_forces: False
+
+optim:
+ batch_size: 8
+ eval_batch_size: 8
+ num_workers: 4
+ lr_initial: 5.e-4
+ optimizer: AdamW
+ optimizer_params: 
+  amsgrad: True
+ scheduler: ReduceLROnPlateau
+ mode: min
+ factor: 0.8
+ patience: 3
+ max_epochs: 10
+ ema_decay: 0.999
+ clip_grad_norm: 10
+ eval_every: 500

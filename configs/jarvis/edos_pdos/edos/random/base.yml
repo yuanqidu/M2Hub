@@ -1,0 +1,17 @@
+trainer: dist
+
+dataset:
+  train:
+    src: data/jarvis/edos_pdos:edos_up/random_train/
+  val:
+    src: data/jarvis/edos_pdos:edos_up/random_valid/
+  test:
+    src: data/jarvis/edos_pdos:edos_up/random_test/
+
+logger: wandb
+
+task:
+  dataset: lmdb
+  description: "Regressing the energies"
+  type: regression
+  metric: mae

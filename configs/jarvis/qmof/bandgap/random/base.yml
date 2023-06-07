@@ -1,0 +1,17 @@
+trainer: energy
+
+dataset:
+  train:
+    src: data/jarvis/qmof:bandgap/random_train/
+  val:
+    src: data/jarvis/qmof:bandgap/random_valid/
+  test:
+    src: data/jarvis/qmof:bandgap/random_test/
+
+logger: wandb
+
+task:
+  dataset: lmdb
+  description: "Regressing the energies"
+  type: regression
+  metric: mae

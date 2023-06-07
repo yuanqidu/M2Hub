@@ -1,0 +1,31 @@
+includes:
+- configs/jarvis/edos_pdos/edos/random/base.yml
+
+model:
+ name: dimenetplusplus
+ hidden_channels: 192
+ out_emb_channels: 192
+ num_blocks: 3
+ cutoff: 6.0
+ num_radial: 6
+ num_spherical: 7
+ num_before_skip: 1
+ num_after_skip: 2
+ num_output_layers: 3
+ regress_forces: False
+ use_pbc: True
+ otf_graph: False
+ output_dim: 300
+
+optim:
+ batch_size: 32
+ eval_batch_size: 32
+ num_workers: 4
+ lr_initial: 0.0001
+ lr_gamma: 0.1
+ lr_milestones:
+  - 5000000000
+ warmup_steps: -1
+ warmup_factor: 1.0
+ max_epochs: 500
+ eval_every: 500

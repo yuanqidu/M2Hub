@@ -1,0 +1,81 @@
+data:
+  prop: heat_ref
+  num_targets: 1
+  niggli: true
+  primitive: false
+  graph_method: crystalnn
+  lattice_scale_method: scale_length
+  preprocess_workers: 30
+  readout: mean
+  max_atoms: 20
+  otf_graph: false
+  eval_model_name: perovskite
+  train_max_epochs: 3000
+  early_stopping_patience: 100000
+  teacher_forcing_max_epoch: 1500
+logging:
+  val_check_interval: 5
+  progress_bar_refresh_rate: 20
+  lr_monitor:
+    logging_interval: step
+    log_momentum: false
+model:
+  encoder:
+    _target_: gnn.DimeNetPlusPlusWrap
+    num_targets: 1
+    hidden_channels: 128
+    num_blocks: 4
+    int_emb_size: 64
+    basis_emb_size: 8
+    out_emb_channels: 256
+    num_spherical: 7
+    num_radial: 6
+    otf_graph: false
+    cutoff: 7.0
+    max_num_neighbors: 20
+    envelope_exponent: 5
+    num_before_skip: 1
+    num_after_skip: 2
+    num_output_layers: 3
+    readout: mean
+  _target_: model.CrystGNN_Supervise
+  use_orientation: false
+  hidden_dim: 128
+  fc_num_layers: 4
+  use_pe: false
+optim:
+  optimizer:
+    _target_: torch.optim.Adam
+    lr: 0.001
+    betas:
+    - 0.9
+    - 0.999
+    eps: 1.0e-08
+    weight_decay: 0
+  use_lr_scheduler: true
+  lr_scheduler:
+    _target_: torch.optim.lr_scheduler.ReduceLROnPlateau
+    factor: 0.6
+    patience: 30
+    min_lr: 0.0001
+train:
+  deterministic: false
+  random_seed: 42
+  pl_trainer:
+    fast_dev_run: false
+    gpus: 1
+    precision: 32
+    max_epochs: 3000
+    accumulate_grad_batches: 1
+    num_sanity_val_steps: 2
+    gradient_clip_val: 0.5
+    gradient_clip_algorithm: value
+    profiler: simple
+  monitor_metric: val_loss
+  monitor_metric_mode: min
+  early_stopping:
+    patience: 100000
+    verbose: false
+  model_checkpoints:
+    save_top_k: 1
+    verbose: false
