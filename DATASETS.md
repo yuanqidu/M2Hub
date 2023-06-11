@@ -5,9 +5,9 @@
 |**task**
 |      |matbench             |jarvis  |s2ef/is2re|omdb    |jarvis                         |matbench       |jarvis           |tmqm          |qm9  |carbon24|perov5|
 |**subset**
-|      |                     |        |          |        |dft3d:                         |               |edos_pdos:       |              |     |        |      |
+|      |                     |    qmof:    |          |        |dft3d:                         |               |edos_pdos:       |              |     |        |      |
 |**property**
-|1     |matbench_phonons     |band_gap|S2EF      |band_gap|formation_energy_peratom       |matbench_jdft2d|edos_up          |Electronic_E  |mu   |        |      |
+|1     |matbench_phonons     |bandgap|S2EF      |band_gap|formation_energy_peratom       |matbench_jdft2d|edos_up          |Electronic_E  |mu   |        |      |
 |2     |matbench_dielectric  |        |IS2RS     |        |optb88vdw_bandgap              |               |pdos_elast       |Dispersion_E  |alpha|        |      |
 |3     |matbench_log_gvrh    |        |IS2RE     |        |optb88vdw_total_energy         |               |                 |Dipole_M      |homo |        |      |
 |4     |matbench_log_kvrh    |        |          |        |ehull                          |               |                 |Metal_q       |lumo |        |      |
