@@ -452,7 +452,6 @@ class LEFTNet(nn.Module):
             vecs = pos[j] - pos[i]
             dist = vecs.norm(dim=-1)
 
-        
         # embed z
         z_emb = self.z_emb_ln(self.z_emb(z))
         

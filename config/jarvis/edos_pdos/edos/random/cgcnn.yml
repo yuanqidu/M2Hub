@@ -1,5 +1,5 @@
 includes:
-  - configs/jarvis/edos_pdos/edos/random/base.yml
+  - config/jarvis/edos_pdos/edos/random/base.yml
 
 model:
   name: cgcnn

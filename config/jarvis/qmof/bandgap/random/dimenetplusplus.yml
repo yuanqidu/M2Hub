@@ -1,5 +1,5 @@
 includes:
-- configs/jarvis/qmof/bandgap/random/base.yml
+- config/jarvis/qmof/bandgap/random/base.yml
 
 model:
  name: dimenetplusplus
