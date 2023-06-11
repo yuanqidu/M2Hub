@@ -2,7 +2,7 @@
 
 ### [Paper on arXiv]()
 
-![](img/m2hub.png)
+![](img/m2hub-1.png)
 
 ## What is M2Hub?
 M2Hub aims to build the machine learning foundations for materials discovery which has a standard workflow from virtual screening/inverse design to simulation to experiment. M2Hub provides **data downloading**, **data processing**, 
