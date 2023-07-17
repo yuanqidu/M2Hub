@@ -72,8 +72,9 @@ We welcome contributions in any format, from new datasets, materials discovery t
 
 Reach us at [yd392@cornell.edu](mailto:yd392@cornell.edu) and [yw2349@cornell.edu](mailto:yw2349@cornell.edu) or open a GitHub issue.
 
-<!-- ## License -->
+## License
 
+M2Hub is released under the [MIT license](./license.md).
 
 ## Acknowledgement
 
