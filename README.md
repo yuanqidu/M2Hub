@@ -74,7 +74,7 @@ Reach us at [yd392@cornell.edu](mailto:yd392@cornell.edu) and [yw2349@cornell.ed
 
 ## License
 
-M2Hub is released under the [MIT license](./license.md).
+M2Hub is released under the [MIT license](./LICENSE.md).
 
 ## Acknowledgement
 
