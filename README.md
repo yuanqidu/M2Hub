@@ -1,6 +1,6 @@
 # M2Hub: Unlocking the Potential of Machine Learning for Materials Discovery
 
-### [Paper on arXiv]()
+### [Paper on arXiv](https://arxiv.org/abs/2307.05378)
 
 ![](img/m2hub-1.png)
 
