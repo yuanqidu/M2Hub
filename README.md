@@ -76,6 +76,19 @@ Reach us at [yd392@cornell.edu](mailto:yd392@cornell.edu) and [yw2349@cornell.ed
 
 M2Hub is released under the [MIT license](./LICENSE.md).
 
+## Citing M2Hub
+
+If you use our code in your work, please consider citing:
+
+```bibtex
+@article{du2023m,
+  title={M $\^{} 2$ Hub: Unlocking the Potential of Machine Learning for Materials Discovery},
+  author={Du, Yuanqi and Wang, Yingheng and Huang, Yining and Li, Jianan Canal and Zhu, Yanqiao and Xie, Tian and Duan, Chenru and Gregoire, John M and Gomes, Carla P},
+  journal={arXiv preprint arXiv:2307.05378},
+  year={2023}
+}
+```
+
 ## Acknowledgement
 
 Open Catalyst Project ([https://github.com/Open-Catalyst-Project/ocp](https://github.com/Open-Catalyst-Project/ocp))
