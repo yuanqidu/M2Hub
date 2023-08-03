@@ -32,6 +32,8 @@ python download_data.py --task TASK --property PROPERTY --split SPLIT --get-edge
 
 Please check [DATASETS.md](DATASETS.md) for details, splits include [random|composition|system|time].
 
+For more details about each dataset, please check [DOCUMENTS.md](DOCUMENTS.md).
+
 ### Model Training
 
 ```
