@@ -2,6 +2,8 @@
 
 ### [Paper on arXiv](https://arxiv.org/abs/2307.05378)
 
+### [Quick Tutorials](tutorials/)
+
 ![](img/m2hub-1.png)
 
 ## What is M2Hub?
@@ -23,6 +25,14 @@ M2Hub provides several key functions, data downloading, data processing, trainin
 ```
 conda env create -f environment.yml
 ```
+
+We also support installation through pip
+
+```
+pip install -e .
+```
+
+Please refer to [INSTALL.md](INSTALL.md) for details.
 
 ### M2Hub Data Downloader
 
