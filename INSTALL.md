@@ -10,3 +10,5 @@ We recommend using the [Python 3.9 Miniconda installer](https://docs.conda.io/en
     ```
 
 - Activate the conda environment with `conda activate m2hub`.
+
+- Install the `m2models` package with `pip install -e .`. We recommend using `mamba` to install dependencies before install `m2models` as detailed above for easier installation. 
