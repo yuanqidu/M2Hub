@@ -1,0 +1,37 @@
+from setuptools import find_packages, setup
+
+setup(
+    name="m2models",
+    version="0.0.1",
+    description="M2Hub: Unlocking the Potential of Machine Learning for Materials Discovery",
+    url="https://github.com/yuanqidu/M2Hub/tree/master",
+    packages=find_packages(),
+    include_package_data=True,
+    install_requires=[
+                      "ase==3.21.1",
+                      "black==22.3.0",
+                      "torch==1.13.1", 
+                      "torchvision==0.14.1 ", 
+                      "torchaudio==0.13.1", 
+                      "torch_geometric",
+                      "pymatgen",
+                      "jarvis-tools",
+                      "rdkit",
+                      "pre-commit==2.10.*",
+                      "syrupy==3.0.6",
+                      "submitit",
+                      "numba",
+                      "lmdb",
+                      "PyYAML",
+                      "pydantic",
+                      "wandb==0.14.0",
+                      "dgl",
+                      "dglgo",
+                      "tqdm",
+                      "scikit-learn",
+                      "scipy",
+                      "matplotlib",
+                      "e3nn==0.4.4",
+                      "torch-scatter",
+                      ]
+)
