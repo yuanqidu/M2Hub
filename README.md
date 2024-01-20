@@ -1,6 +1,6 @@
 # M2Hub: Unlocking the Potential of Machine Learning for Materials Discovery
 
-### [Paper on arXiv](https://arxiv.org/abs/2307.05378)
+### [NeurIPS 2023 paper](https://openreview.net/pdf?id=eJ5nu9qvWz)
 
 ### [Quick Tutorials](tutorials/)
 
@@ -93,10 +93,10 @@ M2Hub is released under the [MIT license](./LICENSE.md).
 If you use our code in your work, please consider citing:
 
 ```bibtex
-@article{du2023m,
+@inproceedings{du2023m,
   title={M $\^{} 2$ Hub: Unlocking the Potential of Machine Learning for Materials Discovery},
-  author={Du, Yuanqi and Wang, Yingheng and Huang, Yining and Li, Jianan Canal and Zhu, Yanqiao and Xie, Tian and Duan, Chenru and Gregoire, John M and Gomes, Carla P},
-  journal={arXiv preprint arXiv:2307.05378},
+  author={Du, Yuanqi and Wang, Yingheng and Huang, Yining and Li, Jianan Canal and Zhu, Yanqiao and Xie, Tian and Duan, Chenru and Gregoire, John and Gomes, Carla P},
+  booktitle={Thirty-seventh Conference on Neural Information Processing Systems Datasets and Benchmarks Track},
   year={2023}
 }
 ```
